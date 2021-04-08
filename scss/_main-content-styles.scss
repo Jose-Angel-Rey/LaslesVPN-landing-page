@@ -89,4 +89,69 @@
       color: $check-icon-color;
     }
   }
+  // ********** Pricing section ***************
+  .pricing-section {
+    @include bdr;
+    @include flexbox($flow: column nowrap);
+    width: 85%;
+    text-align: center;
+    margin: 75px auto;
+
+    &#{__title} {
+      font-size: 3rem;
+      font-weight: 500;
+    }
+    &#{__description} {
+      margin: 20px 0px 50px;
+      font-size: 1.6rem;
+      line-height: 25px;
+      color: $text-color-second;
+    }
+    &#{__info-cards-wrapper}{
+        width: 100%;
+        @include bdr(red);
+    }
+    &#{__info-card}{
+        background-color: #fff;
+        width: 95%;
+        height: 750px;
+        border-radius: 10px;
+        margin: 10px auto 50px;
+        padding: 75px 0px 60px;
+        border: 1px solid #909090;
+        font-size: 1.6rem;
+        @include flexbox($flow:column nowrap);
+    }
+    &#{__info-card-title}{
+        margin: 30px auto;
+        font-size: 2rem;
+    }
+    &#{__info-card-list}{
+        list-style-type: none;
+        text-align: left;
+        line-height: 40px;
+        @include bdr;
+    }
+    .fas{
+        color: $check-icon-color;
+        margin-right: 20px;
+    }
+    &#{__info-card-price}{
+        font-size: 2.6rem;
+        font-weight: 700;
+        margin-top: auto;
+        margin-bottom: 20px;
+        span{
+            color: #707070;
+            font-weight: 500;
+        }
+    }
+    &#{__info-card-btn}{
+        @include ghost-btn($ghost-max-width:250px,$ghost-pd-y:12px);
+    }
+  }
+  // **********  ***************
+  // **********  ***************
+  // **********  ***************
+  // **********  ***************
 }
