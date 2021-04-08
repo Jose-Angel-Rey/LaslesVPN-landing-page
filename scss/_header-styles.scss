@@ -50,6 +50,7 @@
     }
     &#{-btn}:last-of-type{
         @include ghost-btn($ghost-pd-y:7px);
+        border-width: 1px;
     }
   }
   // Content
