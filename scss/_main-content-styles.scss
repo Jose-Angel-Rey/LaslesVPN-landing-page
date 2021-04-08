@@ -176,7 +176,18 @@
       width: 100%;
     }
   }
-  // **********  ***************
+  // ********** Sponsors section ***************
+  .sponsors-section {
+    @include bdr;
+    @include flexbox($flow: column nowrap);
+    width: 70%;
+    margin: 50px auto 75px;
+
+    &#{__logo} {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
   // **********  ***************
   // **********  ***************
 }
