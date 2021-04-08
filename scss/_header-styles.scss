@@ -2,7 +2,7 @@
 .main-header {
   width: 90%;
   @include bdr(green);
-  margin-top: 30px;
+  margin: 30px auto 100px;
   display: grid;
   grid-template-areas:
     "navbar"

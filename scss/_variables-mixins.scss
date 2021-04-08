@@ -63,5 +63,5 @@ $about-icon-bg-color: #f8d3d5;
 }
 
 @mixin bdr($bdr-color: magenta) {
-  border: 2px solid $bdr-color;
+  border: 0px solid $bdr-color;
 }
