@@ -5,7 +5,7 @@
   @include bdr;
   background: linear-gradient(transparent, #f1f1f1);
 
-  // About section
+  // ********** About section **************
   .about-section {
     width: 80%;
     max-width: 350px;
@@ -14,42 +14,79 @@
     font-size: 2rem;
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 1px 3px 10px rgba(136, 136, 136, .4);
+    box-shadow: 1px 3px 10px rgba(136, 136, 136, 0.4);
 
     .flex-container {
       width: 100%;
       @include bdr(red);
       @include flexbox($flow: column nowrap);
-      
     }
-    &#{__content}{
-        @include bdr;
-        @include flexbox($flow:row nowrap,$justify:space-between);
-        height: 150px;
-        width: 200px;
-        margin-bottom: 25px;
-        border-bottom: 2px solid #eee;
+    &#{__content} {
+      @include bdr;
+      @include flexbox($flow: row nowrap, $justify: space-between);
+      height: 150px;
+      width: 200px;
+      margin-bottom: 25px;
+      border-bottom: 2px solid #eee;
     }
-    &#{__content}:last-of-type{
-        border-bottom: none;
+    &#{__content}:last-of-type {
+      border-bottom: none;
     }
-    .fas{
-        font-size: 2rem;
-        padding: 20px;
-        border-radius: 50%;
-        color: $brand-icon-color;
-        background-color: $about-icon-bg-color;
+    .fas {
+      font-size: 2rem;
+      padding: 20px;
+      border-radius: 50%;
+      color: $brand-icon-color;
+      background-color: $about-icon-bg-color;
     }
-    &#{__info-wrapper}{
-        margin: auto;
+    &#{__info-wrapper} {
+      margin: auto;
     }
-    &#{__info}:nth-child(odd){
-        font-weight: 700;
+    &#{__info}:nth-child(odd) {
+      font-weight: 700;
     }
-    &#{__info}:nth-child(even){
-        margin-top: 10px;
-        color: $text-color-second;
+    &#{__info}:nth-child(even) {
+      margin-top: 10px;
+      color: $text-color-second;
     }
+  }
 
+  // ***** Features section ********
+  .features-section {
+    @include bdr;
+    @include flexbox($flow: column nowrap);
+    width: 85%;
+
+    &#{__illustration} {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    &#{__content-wrapper} {
+      @include bdr(red);
+      text-align: center;
+    }
+    &#{__title} {
+      font-size: 3rem;
+      font-weight: 500;
+    }
+    &#{__description} {
+      margin: 20px 0px;
+      font-size: 1.6rem;
+      line-height: 25px;
+      color: $text-color-second;
+    }
+    &#{__feature-list} {
+      list-style-type: none;
+      text-align: left;
+      color: $text-color-second;
+    }
+    &#{__feature-item} {
+      font-size: 1.6rem;
+      line-height: 50px;
+    }
+    .fas {
+      margin-right: 10px;
+      color: $check-icon-color;
+    }
   }
 }
