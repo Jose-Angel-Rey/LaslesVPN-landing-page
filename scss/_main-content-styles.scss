@@ -118,7 +118,7 @@
       border-radius: 10px;
       margin: 10px auto 50px;
       padding: 75px 0px 60px;
-      border: 1px solid #909090;
+      border: 2px solid lighten($text-color-second, 70%);
       font-size: 1.6rem;
       @include flexbox($flow: column nowrap);
     }
@@ -142,8 +142,8 @@
       margin-top: auto;
       margin-bottom: 20px;
       span {
-        color: #707070;
-        font-weight: 500;
+        color: #909090;
+        font-weight: 400;
       }
     }
     &#{__info-card-btn} {
@@ -207,21 +207,50 @@
       line-height: 25px;
       color: $text-color-second;
     }
-    &#{__testimonials-wrapper}{
-        width: 100%;
-        @include bdr(green);
-        @include flexbox($flow: column nowrap);        
+    &#{__testimonials-wrapper} {
+      width: 100%;
+      @include bdr(green);
+      @include flexbox($flow: column nowrap);
     }
-    &#{__testimonial}{
-        width: 100%;
-        max-width: 350px;
-        height: 230px;
-        padding: 20px 30px;
-        border: 1px solid $text-color-special;
+    &#{__testimonial} {
+      width: 100%;
+      max-width: 350px;
+      height: 240px;
+      padding: 20px 25px;
+      border: 2px solid lighten($text-color-second, 70%);
+      border-radius: 10px;
+      font-size: 1.4rem;
+      margin: 20px auto;
     }
-    &#{__testimonial-header}{
-        @include bdr(orange);
-        @include flexbox($flow: row nowrap,$justify:space-between);            
+    &#{__testimonial-header} {
+      @include bdr(orange);
+      @include flexbox($flow: row nowrap, $justify: space-between);
+      margin-bottom: 25px;
+    }
+    &#{__testimonial-profile-photo} {
+      max-width: 100%;
+    }
+    &#{__testimonial-header-info-wrapper} {
+      margin-right: auto;
+      margin-left: 15px;
+      line-height: 20px;
+      text-align: left;
+    }
+    &#{__testimonial-name} {
+      font-weight: 500;
+    }
+    &#{__testimonial-ubication} {
+      color: lighten($text-color-second, 10%);
+      font-weight: 400;
+      display: block;
+    }
+    .fas {
+      color: $star-icon-color;
+      margin-left: 5px;
+    }
+    &#{__testimonial-description} {
+      line-height: 25px;
+      text-align: left;
     }
   }
   // **********  ***************
