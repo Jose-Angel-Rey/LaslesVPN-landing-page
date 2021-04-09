@@ -1,1 +1,33 @@
-  /* ********* CTA aside section ************** */
+/* ********* CTA aside section ************** */
+.cta-section {
+  transform: translateY(-50%);
+  @include bdr;
+  width: 85%;
+  padding: 25px 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 1px 3px 10px rgba(136, 136, 136, 0.4);
+  @include flexbox($flow: column nowrap);
+
+  &#{__content-wrapper} {
+    text-align: center;
+    width: 100%;
+    font-size: 1.6rem;
+
+    @include bdr;
+  }
+  &#{__title} {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 27px;
+  }
+  &#{__description} {
+    color: lighten($text-color-second, 40%);
+    margin: 25px auto;
+  }
+  &#{__subscribe-btn} {
+    @include standard-btn;
+    text-align: center;
+    margin: 30px 0px 15px;
+  }
+}
