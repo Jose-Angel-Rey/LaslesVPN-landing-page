@@ -1,0 +1,27 @@
+@media screen and (min-width: 375px) {
+  .main-header {
+    max-width: 550px;
+    &#{__navbar-link} {
+      font-size: 1.5rem;
+    }
+  }
+
+  .main-content {
+    .features-section {
+      max-width: 510px;
+    }
+    .pricing-section {
+      max-width: 530px;
+      &#{__info-card} {
+        max-width: 390px;
+      }
+    }
+
+    .sponsors-section {
+      max-width: 400px;
+    }
+    .testimonials-section {
+      max-width: 600px;
+    }
+  }
+}
