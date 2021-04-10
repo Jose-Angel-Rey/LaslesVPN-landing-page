@@ -13,44 +13,43 @@
   &#{__navbar} {
     grid-area: navbar;
     margin-bottom: 30px;
-  @include bdr(red);
-  @include flexbox($justify:space-between);
+    @include bdr(red);
+    @include flexbox($justify: space-between);
   }
-  &#{__navbar-logo}{
-    width: 40%;  
+  &#{__navbar-logo} {
+    width: 40%;
     max-width: 150px;
   }
-  &#{__navbar-nav}{
-      order: 2;
-      width: 100%;
-      margin: 15px auto;
-      list-style-type: none;
-      @include flexbox($flow:row nowrap,$justify:space-between)
+  &#{__navbar-nav} {
+    order: 2;
+    width: 100%;
+    margin: 15px auto;
+    list-style-type: none;
+    @include flexbox($flow: row nowrap, $justify: space-between);
   }
-  &#{__navbar-link}{
-      font-size: 1.3rem;
-      color: $text-color-second;
-      text-decoration: none;
-      display: inline-block;
+  &#{__navbar-link} {
+    font-size: 1.3rem;
+    color: $text-color-second;
+    text-decoration: none;
+    display: inline-block;
   }
-  &#{__navbar-cta}{
-    order: 1;  
+  &#{__navbar-cta} {
+    order: 1;
     width: 55%;
-    max-width: 350px;
+    max-width: 230px;
     font-size: 1.5rem;
     @include bdr;
-    @include flexbox($justify:space-between);
+    @include flexbox($justify: space-between);
 
-
-    &#{-btn}:first-of-type{
-        color: black;
-        font-weight: 500;
-        display: inline-block;
-        text-decoration: none;
+    &#{-btn}:first-of-type {
+      color: black;
+      font-weight: 500;
+      display: inline-block;
+      text-decoration: none;
     }
-    &#{-btn}:last-of-type{
-        @include ghost-btn($ghost-pd-y:7px);
-        border-width: 1px;
+    &#{-btn}:last-of-type {
+      @include ghost-btn($ghost-pd-y: 7px);
+      border-width: 1px;
     }
   }
   // Content
