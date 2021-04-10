@@ -56,7 +56,7 @@
   .features-section {
     @include bdr;
     @include flexbox($flow: column nowrap);
-    width: 85%;
+    width: 80%;
 
     &#{__illustration} {
       width: 100%;
