@@ -131,10 +131,30 @@
     }
   }
   // Main footer
-  .main-footer{
-      display: grid;
-      grid-template-columns: repeat(2,1fr fr) 2fr;
-      grid-template-rows: repeat(2, auto);
+  .main-footer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr repeat(3,1fr);
+    align-items: flex-start;
+
+    &#{__content-wrapper} {
+      grid-column: 1/2;
+      text-align: left;
+      align-items: start;
+    }
+    &#{__navs-wrapper}{
+      grid-column: 2/-1;
+      @include flexbox($flow:row nowrap,$justify:space-evenly,$align:start);
+    }
+    // &#{__navbar}:first-of-type {
+    //   grid-column: 2/3;
+    // }
+    // &#{__navbar}:nth-child(2) {
+    //   grid-column: 3/4;
+    // }
+    // &#{__navbar}:last-of-type {
+    //   grid-column: 4/-1;
+    // }
   }
   //
 }
