@@ -37,6 +37,12 @@
     &#{__navbar} {
       grid-column: 1/-1;
     }
+    &#{__navbar-nav} {
+      max-width: 685px;
+    }
+    &#{__navbar-link} {
+      font-size: 1.9rem;
+    }
     &#{__content-wrapper} {
       justify-content: start;
       text-align: left;
@@ -69,6 +75,37 @@
         border-right: none;
       }
     }
+
+    .features-section {
+      margin: 125px auto;
+      max-width: 800px;
+      width: 90%;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      &#{__illustration} {
+        width: 55%;
+      }
+      &#{__content-wrapper} {
+        width: 40%;
+        text-align: left;
+      }
+    }
+    .pricing-section {
+      width: 90%;
+      max-width: 800px;
+
+      &#{__description} {
+        max-width: 600px;
+      }
+      &#{__info-cards-wrapper} {
+        @include flexbox($justify: space-evenly);
+      }
+      &#{__info-card} {
+        margin: 25px 10px 25px 0px;
+      }
+    }
   }
+
+  // Pricing
   //
 }
