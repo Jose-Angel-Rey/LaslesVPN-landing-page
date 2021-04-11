@@ -3,7 +3,6 @@
   width: 100%;
   padding-bottom: 150px;
   @include flexbox($flow: column nowrap);
-  @include bdr;
   background: linear-gradient(transparent, #f1f1f1);
 
   // ********** About section **************
@@ -11,7 +10,6 @@
     width: 80%;
     max-width: 350px;
     margin-bottom: 75px;
-    @include bdr(green);
     font-size: 2rem;
     background-color: #fff;
     border-radius: 15px;
@@ -19,11 +17,9 @@
 
     .flex-container {
       width: 100%;
-      @include bdr(red);
       @include flexbox($flow: column nowrap);
     }
     &#{__content} {
-      @include bdr;
       @include flexbox($flow: row nowrap, $justify: space-between);
       height: 150px;
       width: 200px;
@@ -54,7 +50,6 @@
 
   // ***** Features section ********
   .features-section {
-    @include bdr;
     @include flexbox($flow: column nowrap);
     width: 80%;
 
@@ -63,7 +58,6 @@
       margin-bottom: 25px;
     }
     &#{__content-wrapper} {
-      @include bdr(red);
       text-align: center;
     }
     &#{__title} {
@@ -92,7 +86,6 @@
   }
   // ********** Pricing section ***************
   .pricing-section {
-    @include bdr;
     @include flexbox($flow: column nowrap);
     width: 85%;
     text-align: center;
@@ -110,7 +103,6 @@
     }
     &#{__info-cards-wrapper} {
       width: 100%;
-      @include bdr(red);
     }
     &#{__info-card} {
       background-color: #fff;
@@ -131,7 +123,6 @@
       list-style-type: none;
       text-align: left;
       line-height: 40px;
-      @include bdr;
     }
     .fas {
       color: $check-icon-color;
@@ -153,7 +144,6 @@
   }
   // ****** Global Network section ********
   .global-section {
-    @include bdr;
     @include flexbox($flow: column nowrap);
     width: 90%;
     text-align: center;
@@ -179,7 +169,6 @@
   }
   // ********** Sponsors section ***************
   .sponsors-section {
-    @include bdr;
     @include flexbox($flow: column nowrap);
     width: 70%;
     margin: 50px auto 75px;
@@ -191,7 +180,6 @@
   }
   // ********** Testimonials section ***************
   .testimonials-section {
-    @include bdr;
     @include flexbox($flow: column nowrap);
     text-align: center;
     width: 85%;
@@ -210,7 +198,6 @@
     }
     &#{__testimonials-wrapper} {
       width: 100%;
-      @include bdr(green);
       @include flexbox($flow: column nowrap);
     }
     &#{__testimonial} {
@@ -225,7 +212,6 @@
       margin: 20px auto;
     }
     &#{__testimonial-header} {
-      @include bdr(orange);
       @include flexbox($flow: row nowrap, $justify: space-between);
       margin-bottom: 25px;
     }
@@ -254,5 +240,5 @@
       line-height: 25px;
       text-align: left;
     }
-  }  
+  }
 }
