@@ -140,6 +140,16 @@
     }
     &#{__info-card-btn} {
       @include ghost-btn($ghost-max-width: 250px, $ghost-pd-y: 12px);
+      transition: all 0.5s;
+      &:hover {
+        color: #fff;
+        background-color: $text-color-special;
+        box-shadow: 0px 5px 15px #f5383883;
+      }
+      &:active {
+        color: lighten($text-color-special, 20%);
+        transform: scale(0.95);
+      }
     }
   }
   // ****** Global Network section ********
@@ -210,6 +220,11 @@
       font-size: 1.4rem;
       background-color: #fff;
       margin: 20px auto;
+      transition: transform 0.5s ease-in;
+
+      &:hover {
+        transform: scale(1.02);
+      }
     }
     &#{__testimonial-header} {
       @include flexbox($flow: row nowrap, $justify: space-between);

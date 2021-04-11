@@ -32,13 +32,13 @@
     display: inline-block;
 
     transition: all 0.5s;
-      &:hover {
-        color: $text-color-special;
-      }
-      &:active {
-        color: darken($text-color-special, 20%);
-        transform: scale(0.95);
-      }
+    &:hover {
+      color: $text-color-special;
+    }
+    &:active {
+      color: darken($text-color-special, 20%);
+      transform: scale(0.95);
+    }
   }
   &#{__navbar-cta} {
     order: 1;
