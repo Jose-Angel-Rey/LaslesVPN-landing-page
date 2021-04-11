@@ -30,6 +30,15 @@
     color: $text-color-second;
     text-decoration: none;
     display: inline-block;
+
+    transition: all 0.5s;
+      &:hover {
+        color: $text-color-special;
+      }
+      &:active {
+        color: darken($text-color-special, 20%);
+        transform: scale(0.95);
+      }
   }
   &#{__navbar-cta} {
     order: 1;
@@ -43,10 +52,29 @@
       font-weight: 500;
       display: inline-block;
       text-decoration: none;
+
+      transition: all 0.5s;
+      &:hover {
+        color: $text-color-special;
+      }
+      &:active {
+        color: darken($text-color-special, 20%);
+        transform: scale(0.95);
+      }
     }
     &#{-btn}:last-of-type {
       @include ghost-btn($ghost-pd-y: 7px);
       border-width: 1px;
+
+      transition: all 0.5s;
+      &:hover {
+        color: #fff;
+        background-color: $text-color-special;
+      }
+      &:active {
+        color: lighten($text-color-special, 20%);
+        transform: scale(0.95);
+      }
     }
   }
   // Content
@@ -69,6 +97,14 @@
   &#{__cta} {
     @include standard-btn;
     margin: 35px auto 50px;
+    transition: all 0.5s;
+    &:hover {
+      background-color: lighten($text-color-special, 10%);
+    }
+    &:active {
+      background-color: darken($text-color-special, 10%);
+      transform: scale(0.95);
+    }
   }
   // Illustration
   &#{__illustration} {

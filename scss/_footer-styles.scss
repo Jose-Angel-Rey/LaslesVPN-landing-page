@@ -54,6 +54,14 @@
     color: $text-color-special;
     border: 1px solid lighten($text-color-special, 20%);
     box-shadow: 1px 3px 10px rgba(136, 136, 136, 0.3);
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      transform: translateY(-5px);
+    }
+    &:active {
+      transform: scale(0.95);
+    }
   }
   //   Navs
   &#{__navs-wrapper} {
@@ -75,5 +83,14 @@
     display: block;
     color: $text-color-second;
     margin-bottom: 20px;
+
+    transition: all 0.5s;
+    &:hover {
+      color: $text-color-special;
+    }
+    &:active {
+      color: darken($text-color-special, 20%);
+      transform: scale(0.95);
+    }
   }
 }

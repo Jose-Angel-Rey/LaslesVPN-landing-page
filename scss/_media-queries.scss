@@ -145,6 +145,21 @@
       text-align: left;
       align-items: start;
     }
+    &#{__copy-wrapper} {
+      text-align: left;
+      font-size: 2rem;
+    }
+    &#{__icons-wrapper} {
+      margin: 0px 0px 50px 0px;
+      justify-content: space-between;
+    }
+    .fab {
+      font-size: 2rem;
+      width: 50px;
+      height: 50px;
+      line-height: 35px;
+      text-align: center;
+    }
     &#{__navs-wrapper} {
       grid-column: 2/-1;
       @include flexbox(
@@ -294,22 +309,10 @@
       max-width: 400px;
       line-height: 30px;
     }
-    &#{__copy-wrapper} {
-      text-align: left;
-      font-size: 2rem;
-    }
-    &#{__icons-wrapper} {
-      margin: 0px 0px 50px 0px;
-      justify-content: space-between;
-    }
-    .fab {
-      font-size: 2rem;
-      width: 50px;
-      height: 50px;
-      line-height: 35px;
-      text-align: center;
-    }
-    &#{__nav-title}, &#{__nav-link}{
+
+
+    &#{__nav-title},
+    &#{__nav-link} {
       font-size: 1.9rem;
     }
   }
