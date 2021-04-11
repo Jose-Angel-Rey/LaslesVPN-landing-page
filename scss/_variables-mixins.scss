@@ -61,7 +61,3 @@ $about-icon-bg-color: #f8d3d5;
   border: 2px solid $ghost-color;
   border-radius: $ghost-radius;
 }
-
-@mixin bdr($bdr-color: magenta) {
-  border: 5px solid $bdr-color;
-}
