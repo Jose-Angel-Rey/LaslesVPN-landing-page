@@ -168,7 +168,7 @@
       max-width: 500px;
     }
     &#{__navbar-link} {
-      font-size: 2rem;
+      font-size: 1.9rem;
     }
     &#{__navbar-cta} {
       font-size: 2rem;
@@ -288,8 +288,10 @@
       width: 200px;
     }
     &#{__description} {
-      font-size: 2rem;
+      margin: 20px 0px;
+      font-size: 1.6rem;
       color: $text-color-second;
+      max-width: 400px;
       line-height: 30px;
     }
     &#{__copy-wrapper} {
@@ -308,7 +310,7 @@
       text-align: center;
     }
     &#{__nav-title}, &#{__nav-link}{
-      font-size: 2rem;
+      font-size: 1.9rem;
     }
   }
 }
