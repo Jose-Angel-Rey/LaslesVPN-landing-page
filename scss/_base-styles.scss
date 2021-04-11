@@ -1,26 +1,22 @@
 /* Base styles */
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-:root{
-    scroll-behavior: smooth;
-    font-size: 62.5%;
+:root {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
 }
-.main-container{
-    font-family: 'Rubik', sans-serif;
-    @include bdr;
-    @include flexbox($flow:column nowrap);
+.main-container {
+  font-family: "Rubik", sans-serif;
+  @include flexbox($flow: column nowrap);
 }
-.sr-only{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    top: auto;
-    left: -100000px;
-    overflow: hidden;
-}
-img{
-    max-width: 100%;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  left: -100000px;
+  overflow: hidden;
 }
