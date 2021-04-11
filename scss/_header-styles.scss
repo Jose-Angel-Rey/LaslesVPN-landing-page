@@ -1,7 +1,6 @@
 /* Main-header styles*/
 .main-header {
   width: 90%;
-  @include bdr(green);
   margin: 30px auto 100px;
   display: grid;
   grid-template-areas:
@@ -13,7 +12,6 @@
   &#{__navbar} {
     grid-area: navbar;
     margin-bottom: 30px;
-    @include bdr(red);
     @include flexbox($justify: space-between);
   }
   &#{__navbar-logo} {
@@ -38,7 +36,6 @@
     width: 55%;
     max-width: 230px;
     font-size: 1.5rem;
-    @include bdr;
     @include flexbox($justify: space-between);
 
     &#{-btn}:first-of-type {
