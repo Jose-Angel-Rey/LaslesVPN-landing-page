@@ -261,6 +261,26 @@
       }
     }
   }
+  // CTA section{
+  .cta-section {
+    max-width: 1200px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 50px 60px;
+    &#{__content-wrapper} {
+      width: 60%;
+      max-width: 480px;
+      font-size: 2rem;
+      text-align: left;
+    }
+    &#{__title} {
+      font-size: 4rem;
+      line-height: 45px;
+    }
+    &#{__subscribe-btn} {
+      font-size: 2rem;
+    }
+  }
   // Main footer
   .main-footer {
     display: grid;
