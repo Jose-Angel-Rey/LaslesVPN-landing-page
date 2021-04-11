@@ -31,6 +31,7 @@
 @media screen and (min-width: 768px) {
   // Main header
   .main-header {
+    margin-top: 50px;
     max-width: 800px;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
@@ -39,8 +40,8 @@
     }
     &#{__navbar-nav} {
       max-width: 385px;
-      width:50%;
-      order:0
+      width: 50%;
+      order: 0;
     }
     &#{__navbar-cta} {
       width: 25%;
@@ -136,7 +137,7 @@
   .main-footer {
     display: grid;
     gap: 20px;
-    grid-template-columns: 2fr repeat(3,1fr);
+    grid-template-columns: 2fr repeat(3, 1fr);
     align-items: flex-start;
 
     &#{__content-wrapper} {
@@ -144,19 +145,141 @@
       text-align: left;
       align-items: start;
     }
-    &#{__navs-wrapper}{
+    &#{__navs-wrapper} {
       grid-column: 2/-1;
-      @include flexbox($flow:row nowrap,$justify:space-evenly,$align:start);
+      @include flexbox(
+        $flow: row nowrap,
+        $justify: space-evenly,
+        $align: start
+      );
     }
-    // &#{__navbar}:first-of-type {
-    //   grid-column: 2/3;
-    // }
-    // &#{__navbar}:nth-child(2) {
-    //   grid-column: 3/4;
-    // }
-    // &#{__navbar}:last-of-type {
-    //   grid-column: 4/-1;
-    // }
   }
-  //
+}
+// ************ 1024px ***************
+@media screen and (min-width: 1024px) {
+  // Main header
+  .main-header {
+    max-width: 1200px;
+    column-gap: 10px;
+    &#{__navbar-logo} {
+      max-width: 200px;
+    }
+    &#{__navbar-nav} {
+      max-width: 500px;
+    }
+    &#{__navbar-link} {
+      font-size: 2rem;
+    }
+    &#{__navbar-cta} {
+      font-size: 2rem;
+      max-width: 280px;
+      &#{-btn}:last-of-type {
+        padding: 12px 0px;
+        font-size: 2rem;
+        max-width: 190px;
+      }
+    }
+    &#{__title} {
+      font-size: 5rem;
+      max-width: 600px;
+      margin: 27px 0px;
+    }
+    &#{__description} {
+      font-size: 2rem;
+      line-height: 35px;
+      max-width: 500px;
+    }
+    &#{__cta} {
+      font-size: 2rem;
+    }
+  }
+  //   Main content
+  .main-content {
+    .about-section {
+      max-width: 1200px;
+      .flex-container {
+        justify-content: space-evenly;
+      }
+    }
+
+    .features-section {
+      max-width: 1200px;
+      &#{__title} {
+        font-size: 4rem;
+      }
+      &#{__description} {
+        font-size: 2rem;
+        line-height: 35px;
+      }
+      &#{__feature-item} {
+        font-size: 2rem;
+        line-height: 75px;
+      }
+    }
+    .pricing-section {
+      max-width: 1200px;
+
+      &#{__title} {
+        font-size: 4rem;
+      }
+      &#{__description} {
+        font-size: 2rem;
+        line-height: 35px;
+        max-width: 600px;
+      }
+      &#{__info-cards-wrapper} {
+        @include flexbox($justify: space-evenly);
+      }
+      &#{__info-card} {
+        margin: 25px 10px 25px 0px;
+      }
+      &#{__info-card-btn} {
+        padding: 15px 0px;
+      }
+    }
+    .global-section {
+      &#{__title} {
+        font-size: 4rem;
+      }
+      &#{__description} {
+        font-size: 2rem;
+        max-width: 600px;
+      }
+    }
+    .sponsors-section {
+      max-width: 1200px;
+    }
+    .testimonials-section {
+      width: 90%;
+      max-width: 1200px;
+      &#{__title} {
+        font-size: 4rem;
+      }
+      &#{__description} {
+        font-size: 2rem;
+        line-height: 35px;
+      }
+    }
+  }
+  // Main footer
+  .main-footer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    align-items: flex-start;
+
+    &#{__content-wrapper} {
+      grid-column: 1/2;
+      text-align: left;
+      align-items: start;
+    }
+    &#{__navs-wrapper} {
+      grid-column: 2/-1;
+      @include flexbox(
+        $flow: row nowrap,
+        $justify: space-evenly,
+        $align: start
+      );
+    }
+  }
 }
