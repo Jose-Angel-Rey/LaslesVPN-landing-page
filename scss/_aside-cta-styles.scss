@@ -1,7 +1,6 @@
 /* ********* CTA aside section ************** */
 .cta-section {
   transform: translateY(-50%);
-  @include bdr;
   width: 85%;
   padding: 25px 40px;
   background-color: #fff;
@@ -13,8 +12,6 @@
     text-align: center;
     width: 100%;
     font-size: 1.6rem;
-
-    @include bdr;
   }
   &#{__title} {
     font-size: 2.4rem;
