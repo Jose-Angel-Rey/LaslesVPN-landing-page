@@ -283,23 +283,32 @@
   }
   // Main footer
   .main-footer {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 2fr repeat(3, 1fr);
-    align-items: flex-start;
-
-    &#{__content-wrapper} {
-      grid-column: 1/2;
-      text-align: left;
-      align-items: start;
+    max-width: 1200px;
+    &#{__logo} {
+      width: 200px;
     }
-    &#{__navs-wrapper} {
-      grid-column: 2/-1;
-      @include flexbox(
-        $flow: row nowrap,
-        $justify: space-evenly,
-        $align: start
-      );
+    &#{__description} {
+      font-size: 2rem;
+      color: $text-color-second;
+      line-height: 30px;
+    }
+    &#{__copy-wrapper} {
+      text-align: left;
+      font-size: 2rem;
+    }
+    &#{__icons-wrapper} {
+      margin: 0px 0px 50px 0px;
+      justify-content: space-between;
+    }
+    .fab {
+      font-size: 2rem;
+      width: 50px;
+      height: 50px;
+      line-height: 35px;
+      text-align: center;
+    }
+    &#{__nav-title}, &#{__nav-link}{
+      font-size: 2rem;
     }
   }
 }
