@@ -38,10 +38,12 @@
       grid-column: 1/-1;
     }
     &#{__navbar-nav} {
-      max-width: 685px;
+      max-width: 385px;
+      width:50%;
+      order:0
     }
-    &#{__navbar-link} {
-      font-size: 1.9rem;
+    &#{__navbar-cta} {
+      width: 25%;
     }
     &#{__content-wrapper} {
       justify-content: start;
@@ -92,7 +94,7 @@
     }
     .pricing-section {
       width: 90%;
-      max-width: 800px;
+      max-width: 1000px;
 
       &#{__description} {
         max-width: 600px;
@@ -108,7 +110,7 @@
       width: 90%;
       max-width: 800px;
       flex-flow: row wrap;
-      justify-content: space-between;
+      justify-content: space-evenly;
 
       &#{__logo} {
         width: 200px;
