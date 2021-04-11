@@ -1,20 +1,17 @@
 /* *** Main footer  */
 .main-footer-container {
   width: 100%;
-  @include bdr;
   @include flexbox;
   padding-bottom: 50px;
 }
 .main-footer {
   width: 85%;
-  @include bdr;
   @include flexbox($flow: column nowrap);
   font-size: 1.5rem;
 
   //   Content section
   &#{__content-wrapper} {
     width: 100%;
-    @include bdr(green);
     @include flexbox($flow: column nowrap);
     text-align: center;
     margin-bottom: 35px;
@@ -31,7 +28,6 @@
   &#{__copy-wrapper} {
     width: 100%;
     margin-top: 35px;
-    @include bdr;
     text-align: center;
   }
   &#{__copy} {
@@ -45,7 +41,6 @@
     max-width: 180px;
     margin: auto;
     @include flexbox($justify: space-evenly);
-    @include bdr;
     margin-bottom: 25px;
   }
   .fab {
@@ -66,7 +61,6 @@
   }
   &#{__navbar} {
     width: 90%;
-    @include bdr;
   }
   &#{__nav} {
     list-style-type: none;
