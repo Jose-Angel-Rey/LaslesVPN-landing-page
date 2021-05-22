@@ -12,7 +12,9 @@
 @import "base/base";
 
 // Layout
-@import "layout/header-styles";
+@import "layout/main-header";
+@import "layout/main-header-content";
+
 @import "layout/main-content-styles";
 @import "layout/footer-styles";
 @import "layout/aside-cta-styles";
@@ -22,6 +24,8 @@
 // Components
 // @import "components/main-header-navbar";
 // @import "components/hamburger-btn";
+@import "components/main-header-navbar";
+@import "components/main-header-illustration";
 
 // Media queries
 @import "media-queries";
