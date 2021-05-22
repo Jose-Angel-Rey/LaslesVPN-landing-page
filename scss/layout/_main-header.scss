@@ -20,4 +20,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
   }
+  @media screen and (min-width: 1024px) {
+    max-width: 1200px;
+    column-gap: 10px;
+  }
 }

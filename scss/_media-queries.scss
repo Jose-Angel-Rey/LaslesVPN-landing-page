@@ -1,26 +1,4 @@
 @media screen and (min-width: 1024px) {
-  // Main header
-  .main-header {
-    max-width: 1200px;
-    column-gap: 10px;
-    &#{__navbar-logo} {
-      max-width: 200px;
-    }
-    &#{__navbar-nav} {
-      max-width: 500px;
-    }
-    &#{__navbar-link} {
-      font-size: 1.9rem;
-    }
-    &#{__navbar-cta} {
-      font-size: 2rem;
-      max-width: 280px;
-      &#{-btn}:last-of-type {
-        padding: 12px 0px;
-        font-size: 2rem;
-        max-width: 190px;
-      }
-    }
     &#{__title} {
       font-size: 5rem;
       max-width: 600px;
