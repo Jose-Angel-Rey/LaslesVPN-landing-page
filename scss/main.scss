@@ -1,15 +1,23 @@
-// Contact me: https://github.com/Jose-Angel-Rey
+// ********************************
+//          MAIN:SCSS
+// ********************************
+@charset "utf-8";
 
-// Variables & Mixins
-@import "variables-mixins";
+// Utilities
+@import "utilities/variables";
+@import "utilities/mixins";
 
-// Styles
-@import "base-styles";
-@import "header-styles";
-@import "main-content-styles";
-@import "aside-cta-styles";
-@import "footer-styles";
-@import "attribution-styles";
+// Base
+@import "base/reset";
+@import "base/base";
+
+// Layout
+@import "layout/main-header";
+@import "layout/main-content";
+
+// Components
+@import "components/main-header-navbar";
+@import "components/hamburger-btn";
 
 // Media queries
 @import "media-queries";
