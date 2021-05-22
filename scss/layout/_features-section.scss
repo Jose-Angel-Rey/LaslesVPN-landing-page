@@ -9,16 +9,32 @@
   @media screen and (min-width: 375px) {
     max-width: 510px;
   }
+  @media screen and (min-width: 768px) {
+    margin: 125px auto;
+    max-width: 800px;
+    width: 90%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
 
   // ------ Illustration -------
   &__illustration {
     width: 100%;
     margin-bottom: 25px;
+
+    @media screen and (min-width: 768px) {
+      width: 55%;
+    }
   }
 
   // ------ Content  --------
   &__content-wrapper {
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      width: 40%;
+      text-align: left;
+    }
   }
   // ------ Content - title --------
   &__title {

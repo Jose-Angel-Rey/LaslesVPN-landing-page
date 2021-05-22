@@ -11,9 +11,19 @@
   border-radius: 15px;
   box-shadow: 1px 3px 10px rgba(136, 136, 136, 0.4);
 
+  @media screen and (min-width: 768px) {
+    width: 90%;
+    max-width: 800px;
+  }
+
+  // -------- Flex container ----------
   .flex-container {
-    width: 100%;
     @include flexbox($flow: column nowrap);
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      flex-flow: row nowrap;
+    }
   }
   // ------- Content ---------
   &__content {
@@ -22,9 +32,19 @@
     width: 200px;
     margin-bottom: 25px;
     border-bottom: 2px solid #eee;
+
+    @media screen and (min-width: 768px) {
+      margin: 25px;
+      border-bottom: none;
+      border-right: 2px solid #eee;
+    }
   }
   &__content:last-of-type {
     border-bottom: none;
+
+    @media screen and (min-width: 768px) {
+      border-right: none;
+    }
   }
   .fas {
     font-size: 2rem;

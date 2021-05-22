@@ -10,23 +10,37 @@
   @media screen and (min-width: 375px) {
     max-width: 530px;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 90%;
+    max-width: 1000px;
+  }
   // ------- Title ----------
-  &#{__title} {
+  &__title {
     font-size: 3rem;
     font-weight: 500;
   }
   // ------- Description --------
-  &#{__description} {
+  &__description {
     margin: 20px 0px 50px;
     font-size: 1.6rem;
     line-height: 25px;
     color: $text-color-second;
+
+    @media screen and (min-width: 768px) {
+      max-width: 600px;
+    }
   }
 
   // ------- Info Cards -----------
   &__info-cards-wrapper {
     width: 100%;
+
+    @media screen and (min-width: 768px) {
+      @include flexbox($justify: space-evenly);
+    }
   }
+  // ---------- Info card -------------
   &__info-card {
     @include flexbox($flow: column nowrap);
     background-color: #fff;
@@ -41,11 +55,17 @@
     @media screen and (min-width: 375px) {
       max-width: 355px;
     }
+
+    @media screen and (min-width: 768px) {
+      margin: 25px 10px 25px 0px;
+    }
   }
+  // ---------- Info card - Title -------------
   &__info-card-title {
     margin: 30px auto;
     font-size: 2rem;
   }
+  // ---------- Info card - List ------------
   &__info-card-list {
     list-style-type: none;
     text-align: left;
@@ -55,6 +75,7 @@
     color: $check-icon-color;
     margin-right: 20px;
   }
+  // ---------- Info card - Price -------------
   &__info-card-price {
     font-size: 2.6rem;
     font-weight: 700;
@@ -65,6 +86,7 @@
       font-weight: 400;
     }
   }
+  // ---------- Info card - Button --------------
   &__info-card-btn {
     @include ghost-btn($ghost-max-width: 250px, $ghost-pd-y: 12px);
     transition: all 0.5s;

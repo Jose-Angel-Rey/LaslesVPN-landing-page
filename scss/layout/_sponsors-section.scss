@@ -11,8 +11,20 @@
     max-width: 400px;
   }
 
+  @media screen and (min-width: 768px) {
+    width: 90%;
+    max-width: 800px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  // --------- Logo ----------
   &__logo {
     width: 100%;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      width: 200px;
+      margin-right: 15px;
+    }
   }
 }
