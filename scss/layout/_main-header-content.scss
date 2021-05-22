@@ -16,6 +16,12 @@
   &-title {
     font-size: 3.4rem;
     margin: 25px auto 30px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 5rem;
+      max-width: 600px;
+      margin: 27px 0px;
+    }
   }
 
   // ---------- Description ----------
@@ -24,6 +30,12 @@
     font-size: 1.6rem;
     span {
       font-weight: 500;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 2rem;
+      line-height: 35px;
+      max-width: 500px;
     }
   }
 
@@ -38,6 +50,10 @@
       text-align: center;
     }
 
+    @media screen and (min-width: 1024px) {
+      font-size: 2rem;
+    }
+    
     &:hover {
       background-color: lighten($text-color-special, 10%);
     }

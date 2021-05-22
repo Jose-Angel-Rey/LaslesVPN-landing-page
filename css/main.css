@@ -1,9 +1,9 @@
 /* Error: unmatched "}".
  *     ,
- * 123 | }
+ * 100 | }
  *     | ^
  *     '
- *   scss\_media-queries.scss 123:1  @import
+ *   scss\_media-queries.scss 100:1  @import
  *   scss\main.scss 39:9             root stylesheet */
 
 body::before {
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: unmatched "}".\a     \2577 \a 123 \2502  }\d\a     \2502  ^\a     \2575 \a   scss\\_media-queries.scss 123:1  @import\a   scss\\main.scss 39:9             root stylesheet';
+  content: 'Error: unmatched "}".\a     \2577 \a 100 \2502  }\d\a     \2502  ^\a     \2575 \a   scss\\_media-queries.scss 100:1  @import\a   scss\\main.scss 39:9             root stylesheet';
 }

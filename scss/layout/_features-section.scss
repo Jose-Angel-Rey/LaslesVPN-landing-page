@@ -16,7 +16,9 @@
     flex-flow: row nowrap;
     justify-content: space-between;
   }
-
+  @media screen and (min-width: 1024px) {
+    max-width: 1200px;
+  }
   // ------ Illustration -------
   &__illustration {
     width: 100%;
@@ -40,13 +42,22 @@
   &__title {
     font-size: 3rem;
     font-weight: 500;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 4rem;
+    }
   }
   // ------ Content - Description --------
   &__description {
+    color: $text-color-second;
     margin: 20px 0px;
     font-size: 1.6rem;
     line-height: 25px;
-    color: $text-color-second;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 2rem;
+      line-height: 35px;
+    }
   }
 
   // ------ Feature list  --------
@@ -59,6 +70,11 @@
   &__feature-item {
     font-size: 1.6rem;
     line-height: 50px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 2rem;
+      line-height: 75px;
+    }
   }
   .fas {
     margin-right: 10px;

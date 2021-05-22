@@ -16,6 +16,9 @@
     max-width: 800px;
   }
 
+  @media screen and (min-width: 1024px) {
+    max-width: 1200px;
+  }
   // -------- Flex container ----------
   .flex-container {
     @include flexbox($flow: column nowrap);
@@ -23,6 +26,9 @@
 
     @media screen and (min-width: 768px) {
       flex-flow: row nowrap;
+    }
+    @media screen and (min-width: 1024px) {
+      justify-content: space-evenly;
     }
   }
   // ------- Content ---------

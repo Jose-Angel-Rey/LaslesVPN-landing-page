@@ -15,10 +15,18 @@
     width: 90%;
     max-width: 1000px;
   }
+  @media screen and (min-width: 1024px) {
+    max-width: 1200px;
+  }
+
   // ------- Title ----------
   &__title {
     font-size: 3rem;
     font-weight: 500;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 4rem;
+    }
   }
   // ------- Description --------
   &__description {
@@ -28,6 +36,11 @@
     color: $text-color-second;
 
     @media screen and (min-width: 768px) {
+      max-width: 600px;
+    }
+    @media screen and (min-width: 1024px) {
+      font-size: 2rem;
+      line-height: 35px;
       max-width: 600px;
     }
   }
