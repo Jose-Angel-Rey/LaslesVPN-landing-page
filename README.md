@@ -1,10 +1,14 @@
 # LaslesVPN landing page
+---
+## ***\* This landing page is for educational purposes only \*\***
+---
+## 🚀🚀 Project URL: https://lasles-vpn-jose-angel-rey.vercel.app/
+---
+### 🖋 Original design by: [@didikurniawan](http://twitter.com/didiikurniawann)
 
-## *** This landing page is only for educational purposes ****
+### 👨🏼‍💻 Developed by: [Jose Angel Rey](https://github.com/Jose-Angel-Rey)
 
-### 🚀🚀 URL: https://lasles-vpn-jose-angel-rey.vercel.app/
-
-### 📧 [Contact me](dev.joseangel.rey@gmail.com) 
-
+### 📧 [Contact me](mailto:dev.joseangel.rey@gmail.com)
+---
 ### Desktop preview
 ![Desktop design](/preview/desktop-preview.png)
