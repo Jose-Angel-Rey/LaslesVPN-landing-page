@@ -11,14 +11,20 @@
   @media screen and (min-width: 375px) {
     max-width: 600px;
   }
-
   @media screen and (min-width: 768px) {
     max-width: 800px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 90%;
+    max-width: 1200px;
   }
   // ------------ Title ------------
   &__title {
     font-size: 3rem;
     font-weight: 500;
+    @media screen and (min-width: 1024px) {
+      font-size: 4rem;
+    }
   }
   // --------  Description ---------
   &__description {
@@ -30,6 +36,10 @@
 
     @media screen and (min-width: 768px) {
       max-width: 500px;
+    }
+    @media screen and (min-width: 1024px) {
+      font-size: 2rem;
+      line-height: 35px;
     }
   }
   // ------------  Testimonials wrapepr ------------

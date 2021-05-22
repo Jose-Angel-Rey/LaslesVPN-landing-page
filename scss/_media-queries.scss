@@ -1,20 +1,4 @@
 @media screen and (min-width: 1024px) {
-    .sponsors-section {
-      max-width: 1200px;
-    }
-    .testimonials-section {
-      width: 90%;
-      max-width: 1200px;
-      &#{__title} {
-        font-size: 4rem;
-      }
-      &#{__description} {
-        font-size: 2rem;
-        line-height: 35px;
-      }
-    }
-  }
-  // CTA section{
   .cta-section {
     max-width: 1200px;
     flex-flow: row nowrap;
