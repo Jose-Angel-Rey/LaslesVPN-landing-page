@@ -1,0 +1,58 @@
+// ************************************
+//            MIXINS
+// ************************************
+
+// Add flexbox
+@mixin flexbox($flow: row wrap, $justify: center, $align: center) {
+  display: flex;
+  flex-flow: $flow;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Standard button
+@mixin standard-btn(
+  $standard-bg-color: #f53838,
+  $standard-color: #fff,
+  $standard-width: 250px,
+  $standard-pd-y: 18px,
+  $standard-pd-x: 0px,
+  $standard-radius: 10px,
+  $standard-size: 1.6rem
+) {
+  display: block;
+  width: $standard-width;
+  padding: $standard-pd-y $standard-pd-x;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: $standard-size;
+  color: $standard-color;
+  background-color: $standard-bg-color;
+  border-radius: $standard-radius;
+  box-shadow: 0px 5px 15px #f5383883;
+}
+
+// Ghost button
+@mixin ghost-btn(
+  $ghost-bg-color: transparent,
+  $ghost-color: #f53838,
+  $ghost-width: 60%,
+  $ghost-max-width: 150px,
+  $ghost-pd-y: 10px,
+  $ghost-pd-x: 0px,
+  $ghost-radius: 25px,
+  $ghost-size:1.6rem
+) {
+    display: inline-block;
+  width: $ghost-width;
+  max-width: $ghost-max-width;
+  padding: $ghost-pd-y $ghost-pd-x;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: $ghost-size;
+  color: $ghost-color;
+  background-color: $ghost-bg-color;
+  border: 2px solid $ghost-color;
+  border-radius: $ghost-radius;
+}

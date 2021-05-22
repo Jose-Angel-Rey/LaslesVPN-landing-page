@@ -1,0 +1,33 @@
+// **********************************
+//         MAIN HEADER - CONTENT
+// **********************************
+
+.main-header__content {
+  grid-area: content;
+  @include flexbox;
+  text-align: center;
+
+  &-title {
+    font-size: 3.4rem;
+    margin: 25px auto 30px;
+  }
+  &-description {
+    color: $text-color-second;
+    font-size: 1.6rem;
+    span {
+      font-weight: 500;
+    }
+  }
+  &-cta {
+    @include standard-btn;
+    margin: 35px auto 50px;
+    transition: all 0.5s;
+    &:hover {
+      background-color: lighten($text-color-special, 10%);
+    }
+    &:active {
+      background-color: darken($text-color-special, 10%);
+      transform: scale(0.95);
+    }
+  }
+}

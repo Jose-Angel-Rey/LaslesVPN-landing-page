@@ -1,0 +1,21 @@
+// *****************************
+//        BASE STYLES
+// *****************************
+
+.main-container {
+  font-family: "Rubik", sans-serif;
+  @include flexbox($flow: column nowrap);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  left: -100000px;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
