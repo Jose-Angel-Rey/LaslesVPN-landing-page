@@ -3,12 +3,19 @@
 // *************************************
 
 .main-header__navbar {
-  grid-area: navbar;
-  margin-bottom: 30px;
   @include flexbox($justify: space-between);
+  position: fixed;
+  background-color: aquamarine;
+  top: 0;
+  width: 100%;
+  left: 0;
+  padding: 1.5rem 2rem;
 
+  @media screen and (min-width: 550px) {
+    padding: 2rem 15rem;
+  }
   @media screen and (min-width: 768px) {
-    grid-column: 1/-1;
+    padding: 2rem 7rem;
   }
 
   // ---------- Logo -------------
