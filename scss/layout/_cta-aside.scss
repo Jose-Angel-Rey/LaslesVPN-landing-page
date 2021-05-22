@@ -11,20 +11,48 @@
   border-radius: 15px;
   box-shadow: 1px 3px 10px rgba(136, 136, 136, 0.4);
 
+  @media screen and (min-width: 1024px) {
+    max-width: 1200px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 50px 60px;
+  }
+
+  // ---------- Content --------------
   &__content-wrapper {
     text-align: center;
     width: 100%;
     font-size: 1.6rem;
+
+    @media screen and (min-width: 1024px) {
+      width: 60%;
+      max-width: 480px;
+      font-size: 2rem;
+      text-align: left;
+    }
   }
+  // ---------- Title -----------
   &__title {
     font-size: 2.4rem;
     font-weight: 500;
     line-height: 27px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 4rem;
+      line-height: 45px;
+    }
   }
+  // ---------- Description ------------
   &__description {
     color: lighten($text-color-second, 40%);
     margin: 25px auto;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 2rem;
+    }
   }
+
+  // ---------- Subscribe BTN ------------
   &__subscribe-btn {
     @include standard-btn;
     text-align: center;
