@@ -1,259 +1,71 @@
-/* Main content*/
-.main-content {
-  width: 100%;
-  padding-bottom: 150px;
+// ******************************************
+//       MAIN CONTENT - TESTIMONIALS SECTION
+// ******************************************
+
+.testimonials-section {
   @include flexbox($flow: column nowrap);
-  background: linear-gradient(transparent, #f1f1f1);
+  text-align: center;
+  width: 85%;
+  margin: 50px auto 75px;
 
-  // ********** About section **************
-  .about-section {
-    width: 80%;
-    max-width: 350px;
-    margin-bottom: 75px;
-    font-size: 2rem;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 1px 3px 10px rgba(136, 136, 136, 0.4);
-
-    .flex-container {
-      width: 100%;
-      @include flexbox($flow: column nowrap);
-    }
-    &#{__content} {
-      @include flexbox($flow: row nowrap, $justify: space-between);
-      height: 150px;
-      width: 200px;
-      margin-bottom: 25px;
-      border-bottom: 2px solid #eee;
-    }
-    &#{__content}:last-of-type {
-      border-bottom: none;
-    }
-    .fas {
-      font-size: 2rem;
-      padding: 20px;
-      border-radius: 50%;
-      color: $brand-icon-color;
-      background-color: $about-icon-bg-color;
-    }
-    &#{__info-wrapper} {
-      margin: auto;
-    }
-    &#{__info}:nth-child(odd) {
-      font-weight: 700;
-    }
-    &#{__info}:nth-child(even) {
-      margin-top: 10px;
-      color: $text-color-second;
-    }
+  &__title {
+    font-size: 3rem;
+    font-weight: 500;
   }
-
-  // ***** Features section ********
-  .features-section {
-    @include flexbox($flow: column nowrap);
-    width: 80%;
-
-    &#{__illustration} {
-      width: 100%;
-      margin-bottom: 25px;
-    }
-    &#{__content-wrapper} {
-      text-align: center;
-    }
-    &#{__title} {
-      font-size: 3rem;
-      font-weight: 500;
-    }
-    &#{__description} {
-      margin: 20px 0px;
-      font-size: 1.6rem;
-      line-height: 25px;
-      color: $text-color-second;
-    }
-    &#{__feature-list} {
-      list-style-type: none;
-      text-align: left;
-      color: $text-color-second;
-    }
-    &#{__feature-item} {
-      font-size: 1.6rem;
-      line-height: 50px;
-    }
-    .fas {
-      margin-right: 10px;
-      color: $check-icon-color;
-    }
-  }
-  // ********** Pricing section ***************
-  .pricing-section {
-    @include flexbox($flow: column nowrap);
-    width: 85%;
-    text-align: center;
-    margin: 75px auto;
-
-    &#{__title} {
-      font-size: 3rem;
-      font-weight: 500;
-    }
-    &#{__description} {
-      margin: 20px 0px 50px;
-      font-size: 1.6rem;
-      line-height: 25px;
-      color: $text-color-second;
-    }
-    &#{__info-cards-wrapper} {
-      width: 100%;
-    }
-    &#{__info-card} {
-      background-color: #fff;
-      width: 95%;
-      height: 750px;
-      border-radius: 10px;
-      margin: 10px auto 50px;
-      padding: 75px 0px 60px;
-      border: 2px solid lighten($text-color-second, 70%);
-      font-size: 1.6rem;
-      @include flexbox($flow: column nowrap);
-    }
-    &#{__info-card-title} {
-      margin: 30px auto;
-      font-size: 2rem;
-    }
-    &#{__info-card-list} {
-      list-style-type: none;
-      text-align: left;
-      line-height: 40px;
-    }
-    .fas {
-      color: $check-icon-color;
-      margin-right: 20px;
-    }
-    &#{__info-card-price} {
-      font-size: 2.6rem;
-      font-weight: 700;
-      margin-top: auto;
-      margin-bottom: 20px;
-      span {
-        color: #909090;
-        font-weight: 400;
-      }
-    }
-    &#{__info-card-btn} {
-      @include ghost-btn($ghost-max-width: 250px, $ghost-pd-y: 12px);
-      transition: all 0.5s;
-      &:hover {
-        color: #fff;
-        background-color: $text-color-special;
-        box-shadow: 0px 5px 15px #f5383883;
-      }
-      &:active {
-        color: lighten($text-color-special, 20%);
-        transform: scale(0.95);
-      }
-    }
-  }
-  // ****** Global Network section ********
-  .global-section {
-    @include flexbox($flow: column nowrap);
-    width: 90%;
-    text-align: center;
-    margin: 50px auto 75px;
-
-    &#{__title} {
-      font-size: 3rem;
-      font-weight: 500;
-    }
-    &#{__description} {
-      width: 70%;
-      margin: 30px 0px 50px;
-      font-size: 1.6rem;
-      line-height: 25px;
-      color: $text-color-second;
-      span {
-        font-weight: 700;
-      }
-    }
-    &#{__illustration} {
-      width: 100%;
-    }
-  }
-  // ********** Sponsors section ***************
-  .sponsors-section {
-    @include flexbox($flow: column nowrap);
+  &__description {
     width: 70%;
-    margin: 50px auto 75px;
+    margin: 30px 0px 50px;
+    font-size: 1.6rem;
+    line-height: 25px;
+    color: $text-color-second;
+  }
+  &__testimonials-wrapper {
+    width: 100%;
+    @include flexbox($flow: column nowrap);
+  }
+  &__testimonial {
+    width: 100%;
+    max-width: 350px;
+    height: 240px;
+    padding: 20px 25px;
+    border: 2px solid lighten($text-color-second, 70%);
+    border-radius: 10px;
+    font-size: 1.4rem;
+    background-color: #fff;
+    margin: 20px auto;
+    transition: transform 0.5s ease-in;
 
-    &#{__logo} {
-      width: 100%;
-      margin-bottom: 30px;
+    &:hover {
+      transform: scale(1.02);
     }
   }
-  // ********** Testimonials section ***************
-  .testimonials-section {
-    @include flexbox($flow: column nowrap);
-    text-align: center;
-    width: 85%;
-    margin: 50px auto 75px;
-
-    &#{__title} {
-      font-size: 3rem;
-      font-weight: 500;
-    }
-    &#{__description} {
-      width: 70%;
-      margin: 30px 0px 50px;
-      font-size: 1.6rem;
-      line-height: 25px;
-      color: $text-color-second;
-    }
-    &#{__testimonials-wrapper} {
-      width: 100%;
-      @include flexbox($flow: column nowrap);
-    }
-    &#{__testimonial} {
-      width: 100%;
-      max-width: 350px;
-      height: 240px;
-      padding: 20px 25px;
-      border: 2px solid lighten($text-color-second, 70%);
-      border-radius: 10px;
-      font-size: 1.4rem;
-      background-color: #fff;
-      margin: 20px auto;
-      transition: transform 0.5s ease-in;
-
-      &:hover {
-        transform: scale(1.02);
-      }
-    }
-    &#{__testimonial-header} {
-      @include flexbox($flow: row nowrap, $justify: space-between);
-      margin-bottom: 25px;
-    }
-    &#{__testimonial-profile-photo} {
-      max-width: 100%;
-    }
-    &#{__testimonial-header-info-wrapper} {
-      margin-right: auto;
-      margin-left: 15px;
-      line-height: 20px;
-      text-align: left;
-    }
-    &#{__testimonial-name} {
-      font-weight: 500;
-    }
-    &#{__testimonial-ubication} {
-      color: lighten($text-color-second, 10%);
-      font-weight: 400;
-      display: block;
-    }
-    .fas {
-      color: $star-icon-color;
-      margin-left: 5px;
-    }
-    &#{__testimonial-description} {
-      line-height: 25px;
-      text-align: left;
-    }
+  &__testimonial-header {
+    @include flexbox($flow: row nowrap, $justify: space-between);
+    margin-bottom: 25px;
+  }
+  &__testimonial-profile-photo {
+    max-width: 100%;
+  }
+  &__testimonial-header-info-wrapper {
+    margin-right: auto;
+    margin-left: 15px;
+    line-height: 20px;
+    text-align: left;
+  }
+  &__testimonial-name {
+    font-weight: 500;
+  }
+  &__testimonial-ubication {
+    color: lighten($text-color-second, 10%);
+    font-weight: 400;
+    display: block;
+  }
+  .fas {
+    color: $star-icon-color;
+    margin-left: 5px;
+  }
+  &__testimonial-description {
+    line-height: 25px;
+    text-align: left;
   }
 }
