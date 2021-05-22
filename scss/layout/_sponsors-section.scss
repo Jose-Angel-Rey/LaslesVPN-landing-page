@@ -17,6 +17,10 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
   }
+  @media screen and (min-width: 1024px) {
+    max-width: 1200px;
+  }
+
   // --------- Logo ----------
   &__logo {
     width: 100%;
