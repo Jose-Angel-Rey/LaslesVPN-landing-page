@@ -6,8 +6,9 @@
   width: 90%;
   margin: 30px auto 100px;
   display: grid;
+  padding-top: 13rem;
   grid-template-areas:
-    "navbar"
+    "."
     "content"
     "illustration";
 
@@ -19,6 +20,7 @@
     max-width: 800px;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
+    padding-top: 5rem;
   }
   @media screen and (min-width: 1024px) {
     max-width: 1200px;

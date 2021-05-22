@@ -5,11 +5,11 @@
 .main-header__navbar {
   @include flexbox($justify: space-between);
   position: fixed;
-  background-color: aquamarine;
   top: 0;
-  width: 100%;
   left: 0;
+  width: 100%;
   padding: 1.5rem 2rem;
+  transition: all 0.5s;
 
   @media screen and (min-width: 550px) {
     padding: 2rem 15rem;
@@ -17,7 +17,18 @@
   @media screen and (min-width: 768px) {
     padding: 2rem 7rem;
   }
+  @media screen and (min-width: 1024px) {
+    padding: 2rem 10%;
+  }
+  @media screen and (min-width: 1600px) {
+    padding: 2rem 16%;
+  }
 
+  .active {
+    background-color: #fff;
+    border-bottom: 3px solid orangered;
+    box-shadow: 0px 2px 10px orange;
+  }
   // ---------- Logo -------------
   &-logo {
     width: 40%;
