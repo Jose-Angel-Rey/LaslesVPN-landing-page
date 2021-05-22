@@ -6,6 +6,10 @@
   @include flexbox($flow: column nowrap);
   width: 80%;
 
+  @media screen and (min-width: 375px) {
+    max-width: 510px;
+  }
+
   // ------ Illustration -------
   &__illustration {
     width: 100%;

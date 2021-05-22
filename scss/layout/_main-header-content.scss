@@ -7,10 +7,18 @@
   @include flexbox;
   text-align: center;
 
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+    text-align: left;
+  }
+
+  // ---------- Title -----------
   &-title {
     font-size: 3.4rem;
     margin: 25px auto 30px;
   }
+
+  // ---------- Description ----------
   &-description {
     color: $text-color-second;
     font-size: 1.6rem;
@@ -18,10 +26,18 @@
       font-weight: 500;
     }
   }
+
+  // ---------- CTA ----------
   &-cta {
     @include standard-btn;
     margin: 35px auto 50px;
     transition: all 0.5s;
+
+    @media screen and (min-width: 768px) {
+      margin: 35px 0 50px;
+      text-align: center;
+    }
+
     &:hover {
       background-color: lighten($text-color-special, 10%);
     }

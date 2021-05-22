@@ -8,6 +8,10 @@
   width: 85%;
   margin: 50px auto 75px;
 
+  @media screen and (min-width: 375px) {
+    max-width: 600px;
+  }
+
   &__title {
     font-size: 3rem;
     font-weight: 500;

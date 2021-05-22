@@ -7,7 +7,9 @@
   width: 85%;
   text-align: center;
   margin: 75px auto;
-
+  @media screen and (min-width: 375px) {
+    max-width: 530px;
+  }
   // ------- Title ----------
   &#{__title} {
     font-size: 3rem;
@@ -35,6 +37,10 @@
     padding: 75px 0px 60px;
     border: 2px solid lighten($text-color-second, 70%);
     font-size: 1.6rem;
+
+    @media screen and (min-width: 375px) {
+      max-width: 355px;
+    }
   }
   &__info-card-title {
     margin: 30px auto;
