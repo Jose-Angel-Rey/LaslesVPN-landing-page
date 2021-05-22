@@ -15,9 +15,17 @@
 @import "layout/main-header";
 @import "layout/main-header-content";
 
-@import "layout/main-content-styles";
+@import "layout/main-content";
+@import "layout/about-section";
+@import "layout/features-section";
+@import "layout/pricing-section";
+@import "layout/global-network-section";
+@import "layout/sponsors-section";
+@import "layout/testimonials-section";
+
+@import "layout/cta-aside";
+
 @import "layout/footer-styles";
-@import "layout/aside-cta-styles";
 @import "layout/footer-styles";
 @import "layout/attribution-styles";
 
