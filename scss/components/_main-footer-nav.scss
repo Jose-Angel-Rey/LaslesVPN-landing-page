@@ -1,0 +1,54 @@
+// ***********************************
+//        MAIN FOOTER - NAVS
+// ***********************************
+
+.main-footer {
+  &__navs-wrapper {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      grid-column: 2/-1;
+      @include flexbox(
+        $flow: row nowrap,
+        $justify: space-evenly,
+        $align: start
+      );
+    }
+  }
+  &__navbar {
+    width: 90%;
+  }
+  &__nav {
+    list-style-type: none;
+    margin-bottom: 50px;
+  }
+  // --------  Title -----------
+  &__nav-title {
+    font-weight: 500;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 1.9rem;
+    }
+  }
+  // -------- Link ----------
+  &__nav-link {
+    text-decoration: none;
+    display: block;
+    color: $text-color-second;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 1.9rem;
+    }
+
+    &:hover {
+      color: $text-color-special;
+    }
+    &:active {
+      color: darken($text-color-special, 20%);
+      transform: scale(0.95);
+    }
+  }
+}
