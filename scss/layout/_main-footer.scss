@@ -1,0 +1,96 @@
+/* *** Main footer  */
+.main-footer-container {
+  width: 100%;
+  @include flexbox;
+  padding-bottom: 50px;
+}
+.main-footer {
+  width: 85%;
+  @include flexbox($flow: column nowrap);
+  font-size: 1.5rem;
+
+  //   Content section
+  &#{__content-wrapper} {
+    width: 100%;
+    @include flexbox($flow: column nowrap);
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  &#{__logo} {
+    width: 150px;
+  }
+  &#{__description} {
+    font-size: 1.5rem;
+    margin: 15px auto;
+    line-height: 25px;
+  }
+  //   Copy section
+  &#{__copy-wrapper} {
+    width: 100%;
+    margin-top: 35px;
+    text-align: center;
+  }
+  &#{__copy} {
+    color: lighten($text-color-second, 40%);
+    span {
+      font-weight: 700;
+    }
+  }
+  &#{__icons-wrapper} {
+    width: 70%;
+    max-width: 180px;
+    margin: auto;
+    @include flexbox($justify: space-evenly);
+    margin-bottom: 25px;
+  }
+  .fab {
+    font-size: 15px;
+    background-color: #fff;
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+    line-height: 14px;
+    border-radius: 50%;
+    color: $text-color-special;
+    border: 1px solid lighten($text-color-special, 20%);
+    box-shadow: 1px 3px 10px rgba(136, 136, 136, 0.3);
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      transform: translateY(-5px);
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+  //   Navs
+  &#{__navs-wrapper} {
+    width: 100%;
+  }
+  &#{__navbar} {
+    width: 90%;
+  }
+  &#{__nav} {
+    list-style-type: none;
+    margin-bottom: 50px;
+  }
+  &#{__nav-title} {
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  &#{__nav-link} {
+    text-decoration: none;
+    display: block;
+    color: $text-color-second;
+    margin-bottom: 20px;
+
+    transition: all 0.5s;
+    &:hover {
+      color: $text-color-special;
+    }
+    &:active {
+      color: darken($text-color-special, 20%);
+      transform: scale(0.95);
+    }
+  }
+}

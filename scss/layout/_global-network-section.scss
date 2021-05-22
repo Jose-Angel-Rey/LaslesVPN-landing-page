@@ -1,0 +1,31 @@
+// ******************************************
+//       MAIN CONTENT - GLOBAL NETWORK SECTION
+// ******************************************
+
+.global-section {
+  @include flexbox($flow: column nowrap);
+  width: 90%;
+  text-align: center;
+  margin: 50px auto 75px;
+
+  // ----- Title --------
+  &__title {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  // ----- Description ---------
+  &__description {
+    width: 70%;
+    margin: 30px 0px 50px;
+    font-size: 1.6rem;
+    line-height: 25px;
+    color: $text-color-second;
+    span {
+      font-weight: 700;
+    }
+  }
+  // ----- Illustration --------
+  &__illustration {
+    width: 100%;
+  }
+}

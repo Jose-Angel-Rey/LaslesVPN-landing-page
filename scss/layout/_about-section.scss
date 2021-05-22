@@ -1,0 +1,47 @@
+// ******************************************
+//       MAIN CONTENT - ANOUT SECTION
+// ******************************************
+
+.about-section {
+  width: 80%;
+  max-width: 350px;
+  margin-bottom: 75px;
+  font-size: 2rem;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 1px 3px 10px rgba(136, 136, 136, 0.4);
+
+  .flex-container {
+    width: 100%;
+    @include flexbox($flow: column nowrap);
+  }
+  // ------- Content ---------
+  &__content {
+    @include flexbox($flow: row nowrap, $justify: space-between);
+    height: 150px;
+    width: 200px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eee;
+  }
+  &__content:last-of-type {
+    border-bottom: none;
+  }
+  .fas {
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 50%;
+    color: $brand-icon-color;
+    background-color: $about-icon-bg-color;
+  }
+  // ------- Content - Info wrapper ---------
+  &__info-wrapper {
+    margin: auto;
+  }
+  &__info:nth-child(odd) {
+    font-weight: 700;
+  }
+  &__info:nth-child(even) {
+    margin-top: 10px;
+    color: $text-color-second;
+  }
+}

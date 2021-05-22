@@ -1,0 +1,47 @@
+// ******************************************
+//       MAIN CONTENT - FEATURES SECTION
+// ******************************************
+
+.features-section {
+  @include flexbox($flow: column nowrap);
+  width: 80%;
+
+  // ------ Illustration -------
+  &__illustration {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  // ------ Content  --------
+  &__content-wrapper {
+    text-align: center;
+  }
+  // ------ Content - title --------
+  &__title {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  // ------ Content - Description --------
+  &__description {
+    margin: 20px 0px;
+    font-size: 1.6rem;
+    line-height: 25px;
+    color: $text-color-second;
+  }
+
+  // ------ Feature list  --------
+  &__feature-list {
+    list-style-type: none;
+    text-align: left;
+    color: $text-color-second;
+  }
+  // ------ Feature item -------
+  &__feature-item {
+    font-size: 1.6rem;
+    line-height: 50px;
+  }
+  .fas {
+    margin-right: 10px;
+    color: $check-icon-color;
+  }
+}

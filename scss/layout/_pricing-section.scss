@@ -1,0 +1,75 @@
+// ******************************************
+//       MAIN CONTENT - PRICING SECTION
+// ******************************************
+
+.pricing-section {
+  @include flexbox($flow: column nowrap);
+  width: 85%;
+  text-align: center;
+  margin: 75px auto;
+
+  // ------- Title ----------
+  &#{__title} {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  // ------- Description --------
+  &#{__description} {
+    margin: 20px 0px 50px;
+    font-size: 1.6rem;
+    line-height: 25px;
+    color: $text-color-second;
+  }
+
+  // ------- Info Cards -----------
+  &__info-cards-wrapper {
+    width: 100%;
+  }
+  &__info-card {
+    @include flexbox($flow: column nowrap);
+    background-color: #fff;
+    width: 95%;
+    height: 750px;
+    border-radius: 10px;
+    margin: 10px auto 50px;
+    padding: 75px 0px 60px;
+    border: 2px solid lighten($text-color-second, 70%);
+    font-size: 1.6rem;
+  }
+  &__info-card-title {
+    margin: 30px auto;
+    font-size: 2rem;
+  }
+  &__info-card-list {
+    list-style-type: none;
+    text-align: left;
+    line-height: 40px;
+  }
+  .fas {
+    color: $check-icon-color;
+    margin-right: 20px;
+  }
+  &__info-card-price {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-top: auto;
+    margin-bottom: 20px;
+    span {
+      color: #909090;
+      font-weight: 400;
+    }
+  }
+  &__info-card-btn {
+    @include ghost-btn($ghost-max-width: 250px, $ghost-pd-y: 12px);
+    transition: all 0.5s;
+    &:hover {
+      color: #fff;
+      background-color: $text-color-special;
+      box-shadow: 0px 5px 15px #f5383883;
+    }
+    &:active {
+      color: lighten($text-color-special, 20%);
+      transform: scale(0.95);
+    }
+  }
+}
