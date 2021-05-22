@@ -13,7 +13,9 @@
     grid-template-columns: 2fr repeat(3, 1fr);
     align-items: flex-start;
   }
-
+  @media screen and (min-width: 1024px) {
+    max-width: 1200px;
+  }
   &-container {
     width: 100%;
     @include flexbox;
