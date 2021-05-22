@@ -72,6 +72,10 @@
     @media screen and (min-width: 768px) {
       margin: 25px 10px 25px 0px;
     }
+
+    @media screen and (min-width: 1024px) {
+      margin: 25px 10px 25px 0px;
+    }
   }
   // ---------- Info card - Title -------------
   &__info-card-title {
@@ -103,6 +107,11 @@
   &__info-card-btn {
     @include ghost-btn($ghost-max-width: 250px, $ghost-pd-y: 12px);
     transition: all 0.5s;
+
+    @media screen and (min-width: 1024px) {
+      padding: 15px 0px;
+    }
+
     &:hover {
       color: #fff;
       background-color: $text-color-special;

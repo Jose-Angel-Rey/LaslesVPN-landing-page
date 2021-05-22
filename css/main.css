@@ -1,10 +1,10 @@
 /* Error: unmatched "}".
- *     ,
- * 100 | }
- *     | ^
- *     '
- *   scss\_media-queries.scss 100:1  @import
- *   scss\main.scss 39:9             root stylesheet */
+ *    ,
+ * 56 | }
+ *    | ^
+ *    '
+ *   scss\_media-queries.scss 56:1  @import
+ *   scss\main.scss 39:9            root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: unmatched "}".\a     \2577 \a 100 \2502  }\d\a     \2502  ^\a     \2575 \a   scss\\_media-queries.scss 100:1  @import\a   scss\\main.scss 39:9             root stylesheet';
+  content: 'Error: unmatched "}".\a    \2577 \a 56 \2502  }\d\a    \2502  ^\a    \2575 \a   scss\\_media-queries.scss 56:1  @import\a   scss\\main.scss 39:9            root stylesheet';
 }

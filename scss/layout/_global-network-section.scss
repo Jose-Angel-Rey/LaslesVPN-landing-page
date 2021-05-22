@@ -12,6 +12,10 @@
   &__title {
     font-size: 3rem;
     font-weight: 500;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 4rem;
+    }
   }
   // ----- Description ---------
   &__description {
@@ -22,6 +26,11 @@
     color: $text-color-second;
     span {
       font-weight: 700;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 2rem;
+      max-width: 600px;
     }
   }
   // ----- Illustration --------
