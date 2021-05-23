@@ -12,13 +12,14 @@ ScrollReveal().reveal(".main-header__content", {
   duration: 2000,
   delay: 500,
   origin: "left",
-  distance: "10rem",
+  distance: "2rem",
+  visibility: "hidden"
 });
 ScrollReveal().reveal(".main-header__illustration", {
   duration: 2000,
   delay: 500,
   origin: "right",
-  distance: "10rem",
+  distance: "2rem",
 });
 
 // -----  Main content -----
@@ -41,13 +42,13 @@ ScrollReveal().reveal(".features-section__illustration", {
   duration: 2000,
   delay: 500,
   origin: "left",
-  distance: "10rem",
+  distance: "2rem",
 });
 ScrollReveal().reveal(".features-section__content-wrapper", {
   duration: 2000,
   delay: 500,
   origin: "right",
-  distance: "10rem",
+  distance: "2rem",
 });
 
 // ----- Pricing section -----
@@ -55,19 +56,18 @@ ScrollReveal().reveal(".pricing-section__title", {
   duration: 2000,
   delay: 500,
   origin: "left",
-  distance: "10rem",
+  distance: "2rem",
 });
 ScrollReveal().reveal(".pricing-section__description", {
   duration: 2000,
   delay: 500,
   origin: "right",
-  distance: "10rem",
+  distance: "2rem",
 });
 ScrollReveal().reveal(".pricing-section__info-card", {
   duration: 2000,
   delay: 1000,
   origin: "bottom",
-  distance: "10rem",
 });
 
 // -----  Global network section -----
@@ -75,13 +75,13 @@ ScrollReveal().reveal(".global-section__title", {
   duration: 2000,
   delay: 500,
   origin: "left",
-  distance: "10rem",
+  distance: "2rem",
 });
 ScrollReveal().reveal(".global-section__description", {
   duration: 2000,
   delay: 500,
   origin: "right",
-  distance: "10rem",
+  distance: "2rem",
 });
 ScrollReveal().reveal(".global-section__illustration", {
   duration: 2000,
@@ -103,13 +103,13 @@ ScrollReveal().reveal(".testimonials-section__title", {
   duration: 2000,
   delay: 750,
   origin: "left",
-  distance: "10rem",
+  distance: "2rem",
 });
 ScrollReveal().reveal(".testimonials-section__description", {
   duration: 2000,
   delay: 750,
   origin: "right",
-  distance: "10rem",
+  distance: "2rem",
 });
 ScrollReveal().reveal(".testimonials-section__testimonial", {
   duration: 2000,
@@ -137,5 +137,5 @@ ScrollReveal().reveal(".attribution p", {
   duration: 2000,
   delay: 1000,
   origin: "left",
-  distance: "10rem",
+  distance: "2rem",
 });

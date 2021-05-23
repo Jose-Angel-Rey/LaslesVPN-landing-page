@@ -10,7 +10,15 @@
   width: 100%;
   padding: 1.5rem 2rem;
   transition: all 0.5s;
+  opacity: 0;
+  animation: show 2s 2s forwards;
   z-index: 100000;
+
+  @keyframes show {
+    to {
+      opacity: 1;
+    }
+  }
 
   @media screen and (min-width: 550px) {
     padding: 2rem 15rem;
