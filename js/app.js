@@ -1,7 +1,7 @@
-// Hamburger menu
-const hamburgerBtn = document.querySelector(".top-section__hamburger-btn");
-
-hamburgerBtn.addEventListener("click", () => {
-  hamburgerBtn.classList.toggle("active");
-  hamburgerBtn.nextElementSibling.classList.toggle("open");
+window.addEventListener("scroll", () => {
+  const mainNav = document.querySelector(".main-header__navbar");
+  mainNav.classList.add("active");
+  if (window.scroll === 0) {
+    mainNav.classList.remove("active");
+  }
 });
