@@ -6,7 +6,7 @@
   width: 90%;
   margin: 30px auto 100px;
   display: grid;
-  padding-top: 13rem;
+  padding-top: 9rem;
   grid-template-areas:
     "."
     "content"
@@ -25,5 +25,6 @@
   @media screen and (min-width: 1024px) {
     max-width: 1200px;
     column-gap: 10px;
+    padding-top: 8rem;
   }
 }
