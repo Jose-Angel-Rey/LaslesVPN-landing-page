@@ -3,8 +3,8 @@
 // *****************************
 
 .main-container {
-  font-family: "Rubik", sans-serif;
   @include flexbox($flow: column nowrap);
+  font-family: "Rubik", sans-serif;
 }
 
 .sr-only {

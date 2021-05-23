@@ -101,19 +101,19 @@ ScrollReveal().reveal(".sponsors-section__logo", {
 // -----  Testimonials section -----
 ScrollReveal().reveal(".testimonials-section__title", {
   duration: 2000,
-  delay: 500,
+  delay: 750,
   origin: "left",
   distance: "10rem",
 });
 ScrollReveal().reveal(".testimonials-section__description", {
   duration: 2000,
-  delay: 500,
+  delay: 750,
   origin: "right",
   distance: "10rem",
 });
 ScrollReveal().reveal(".testimonials-section__testimonial", {
   duration: 2000,
-  delay: 1000,
+  delay: 1200,
   origin: "bottom",
   distance: "10rem",
 });
@@ -136,6 +136,6 @@ ScrollReveal().reveal(".main-footer", {
 ScrollReveal().reveal(".attribution p", {
   duration: 2000,
   delay: 1000,
-  origin: "bottom",
+  origin: "left",
   distance: "10rem",
 });
