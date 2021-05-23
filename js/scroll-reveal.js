@@ -118,4 +118,24 @@ ScrollReveal().reveal(".testimonials-section__testimonial", {
   distance: "10rem",
 });
 
-// -----  section -----
+// -----  CTA aside section -----
+ScrollReveal().reveal(".cta-section", {
+  duration: 2000,
+  delay: 1000,
+  origin: "bottom",
+  distance: "10rem",
+});
+
+// -----  Main footer -----
+ScrollReveal().reveal(".main-footer", {
+  duration: 2000,
+  delay: 1000,
+  origin: "bottom",
+  distance: "10rem",
+});
+ScrollReveal().reveal(".attribution p", {
+  duration: 2000,
+  delay: 1000,
+  origin: "bottom",
+  distance: "10rem",
+});
