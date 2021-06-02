@@ -2,7 +2,7 @@
 ---
 ## ***\* This landing page is for educational purposes only \*\***
 ---
-## 🚀🚀 Project URL: https://lasles-vpn-jose-angel-rey.vercel.app/
+## 🚀🚀 Project URL: https://lasles-vpn-landing-page.vercel.app/
 ---
 ### 🖋 Designed by: [@didikurniawan](http://twitter.com/didiikurniawann)
 
